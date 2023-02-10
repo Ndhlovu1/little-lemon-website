@@ -1,9 +1,6 @@
 from django.db import models
 
 
-
-
-
 class BookingTable(models.Model):
     Name = models.CharField(max_length=255)
     No_of_guests = models.SmallIntegerField(default=10)
@@ -19,7 +16,7 @@ class MenuTable(models.Model):
     Inventory = models.SmallIntegerField(default=5)
 
     def __str__(self) -> str:
-        return self.Title
+        return f'{self.Title} : {self.Price}'
 
 
 
