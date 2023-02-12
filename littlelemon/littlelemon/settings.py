@@ -92,7 +92,8 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
             }  
     }
-}
+} 
+
 
 #If you are running mysql -> GRANT ALL ON LittleLemonDb.* TO 'djangoUser'@'localhost';
 
